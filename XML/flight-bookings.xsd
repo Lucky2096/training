@@ -1,0 +1,47 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.sidgs.com/flight-booking">
+    <xs:element name="flightBookings">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="totalBookings" type="xs:positiveInteger"/>
+                <xs:element name="flightBooking" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="bookingid" type="xs:positiveInteger"/>
+                            <xs:element name="bookingstatus" type="xs:string"/>
+                            <xs:element name="bookingdate" type="xs:date"/>
+                            <xs:element name="passenger" >
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="passengerid" type="xs:positiveInteger"></xs:element>
+                                        <xs:element name="name" type="xs:string"/>
+                                        <xs:element name="email" type="xs:string"/>
+                                        <xs:element name="contactnumber">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="contactnumber1" />
+                                                    <xs:element name="contactnumber2" />
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="flight">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="flightnumber" type="xs:string"></xs:element>
+                                        <xs:element name="airline" type="xs:string"></xs:element>
+                                        <xs:element name="origination" type="xs:string"></xs:element>
+                                        <xs:element name ="destination" type="xs:string"></xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+        
+    </xs:element>
+
+</xs:schema>

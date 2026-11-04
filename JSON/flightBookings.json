@@ -1,0 +1,41 @@
+{
+    "total Bookings":2,
+    "bookings":[
+        {
+            "bookingId":1234,
+            "bookindStatus":"confirmed",
+            "bookingDate":"2026-10-3",
+            "passanger":{
+                "passangerid":101,
+                "name":"lucky",
+                "email":"lucky@gmail.com",
+                "contact":[9000,3452]
+            },
+            "flight":{
+                "flightnumber":120,
+                "airline":"Indigo",
+                "origination":"HYD",
+                "destination":"CHE"
+            }
+            
+        },
+        {
+            "bookingId":502,
+            "bookindStatus":"pending",
+            "bookingDate":"2026-4-18",
+            "passanger":{
+                "passangerid":102,
+                "name":"vamshi",
+                "email":"vamshi@gmail.com",
+                "contact":[65432]
+            },
+            "flight":{
+                "flightnumber":121,
+                "airline":"IndianAir",
+                "origination":"BLR",
+                "destination": "BOM"
+            }
+        }
+       
+    ]
+}

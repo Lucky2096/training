@@ -1,0 +1,50 @@
+<xs:flight-booking  xmlns:xs="http://www.sidgs.com/flight-booking.xml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.sidgs.com/flight-booking flight-bookings.xsd">
+<flightBookings>
+    <totalBookings>2</totalBookings>
+    <flightBooking>
+        <bookingid>501</bookingid>
+        <bookingstatus>conformed</bookingstatus>
+        <bookingdate>2026-11-20</bookingdate>
+        <passenger>
+            <passengerid>101</passengerid>
+            <name>lucky</name>
+            <email>lucky@gmail.com</email>
+            <contactnumber>
+                <contactnumber1>9000092096</contactnumber1>
+                <contactnumber2>9609094201</contactnumber2>
+            </contactnumber>
+        </passenger>
+        <flight>
+            
+                <flightnumber>1A204</flightnumber>
+                <airline>IndianAir</airline>
+                <origination>DEL</origination>
+                <destination>HYD</destination>
+            
+        </flight>
+    </flightBooking>
+    <flightBooking>
+        <bookingid>601</bookingid>
+        <bookingstatus>pending</bookingstatus>
+        <bookingdate>2026-11-07</bookingdate>
+        <passenger>
+            <passengerid>102</passengerid>
+            <name>sunil</name>
+            <email>sunil@gmail.com</email>
+            <contactnumber>
+                <contactnumber1>92096</contactnumber1>
+                <contactnumber2>094201</contactnumber2>
+            </contactnumber>
+        </passenger>
+        <flight>
+            
+                <flightnumber>1A205</flightnumber>
+                <airline>Indigo</airline>
+                <origination>BOM</origination>
+                <destination>HYD</destination>
+            
+        </flight>
+    </flightBooking>
+</flightBookings>
+</xsi:flight-booking>

@@ -1,0 +1,7 @@
+{
+    "ID":1234,"organisation" :"BLR","destination" :"DEL",
+    "price":4000,
+    "departureDate": "2026-11-02",
+    "airlines":"Indigo",
+    "discount":10
+}
